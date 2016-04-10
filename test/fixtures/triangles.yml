@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  side_a: 1
+  side_b: 1
+  side_c: 1
+
+two:
+  side_a: 1
+  side_b: 1
+  side_c: 1

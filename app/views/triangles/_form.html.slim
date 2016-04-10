@@ -1,0 +1,13 @@
+.row
+  .col-sm-6.col-sm-offset-3
+    .panel.panel-default
+      .panel-heading
+        h4 Triangle
+      .panel-body
+        = simple_form_for(@triangle) do |f|
+          = f.error_notification
+          = f.input :side_a
+          = f.input :side_b
+          = f.input :side_c
+          = f.button :submit, 'Save', class: 'btn btn-block btn-primary', data: { disable_with: 'Saving...' }
+          = link_to 'Cancel', root_path, class: 'btn btn-block btn-default'

@@ -1,0 +1,18 @@
+.row
+  .col-sm-12
+    .pull-left
+      h4 Triangles
+    .pull-right
+      = link_to 'New Triangle', new_triangle_path, class: 'btn btn-default'
+  .col-sm-12.mT20
+    table.table.table-bordered
+      thead
+        tr
+          th Side A
+          th Side B
+          th Side C
+          th Type
+      tbody
+        = render @triangles
+  .col-sm-12
+    = paginate @triangles
